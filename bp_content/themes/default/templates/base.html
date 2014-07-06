@@ -49,6 +49,15 @@
                             <!--<li><a href="https://github.com/coto/gae-boilerplate" target="_blank">
                                 <span class="icon-inbox"></span> {% trans %}Source Code{% endtrans %}</a>
                             </li> -->
+                            <li {% if path== uri_for("about-me") %} class="active" {% endif %}>
+                                <a href="{{ uri_for("about-me") }}">
+                                     <span class="icon-user"></span> {% trans %}About me{% endtrans %}</a>
+                            </li>
+                            <li{% if path == uri_for("contact") %} class="active"{% endif %}>
+                                <a href="{{ uri_for("contact") }}">
+                                     <span class="icon-book"></span> {% trans %}Contact{% endtrans %}</a>
+                            </li>
+
                             {% if locale_iso %}
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -145,7 +154,7 @@
                     
                 {% endblock %}
                 {% block subnavbar %}
-                    <div class="subnav">
+                   <!-- <div class="subnav">
                         <ul>
 
                             <li {% if path== uri_for("about-me") %} class="active" {% endif %}>
@@ -156,7 +165,7 @@
                             </li>
 
 
-                            <!--
+                            
                             {% if not user_id %}
                                 <li{% if path == uri_for("register") %} class="active"{% endif %}>
                                     <a href="{{ uri_for("register") }}">{% trans %}Sign Up{% endtrans %}</a>
@@ -164,9 +173,9 @@
                                 <li{% if path == uri_for("password-reset") %} class="active"{% endif %}>
                                     <a href="{{ uri_for("password-reset") }}">{% trans %}Forgot your password?{% endtrans %}</a>
                                 </li>
-                            {% endif %} -->
+                            {% endif %} 
                         </ul>
-                    </div>
+                    </div> -->
                 {% endblock %}
             </header>
         {% endblock %}
