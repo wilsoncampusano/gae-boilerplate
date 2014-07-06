@@ -1472,3 +1472,9 @@ class CrossDomainHandler(BaseHandler):
             return text.replace("{{ %s }}" % key, params[key])
 
         self.response.write(reduce(set_variables, params, open("bp_content/themes/%s/templates/seo/crossdomain.xml" % self.get_theme).read()))
+
+class AboutMeHandler(BaseHandler):
+    ''' handler for the about page '''
+    def get(self):
+        params={}
+        return self.render_template('about-me.html', **params)

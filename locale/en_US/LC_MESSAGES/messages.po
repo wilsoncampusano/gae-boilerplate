@@ -442,3 +442,6 @@ msgstr ""
 msgid "to resend the email."
 msgstr ""
 
+msgid "About me"
+msgstr ""
+

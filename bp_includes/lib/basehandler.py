@@ -269,7 +269,7 @@ class BaseHandler(webapp2.RequestHandler):
             territory_id = locale_iso.territory
             language = locale_iso.languages[language_id]
             territory = locale_iso.territories[territory_id]
-
+        locale_iso = None # no mostrar el locale
         # make all self.view variables available in jinja2 templates
         if hasattr(self, 'view'):
             kwargs.update(self.view.__dict__)

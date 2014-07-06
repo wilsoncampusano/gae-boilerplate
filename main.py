@@ -13,8 +13,8 @@
 # limitations under the License.
 #
 
-__author__ = 'Rodrigo Augosto (@coto)'
-__website__ = 'www.beecoss.com'
+__author__ = 'Wilson Campusano'
+__website__ = 'www.wilcage.com'
 
 import os
 import sys

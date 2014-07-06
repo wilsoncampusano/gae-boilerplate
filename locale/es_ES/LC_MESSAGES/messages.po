@@ -471,3 +471,5 @@ msgstr "para ayudar a crear tu aplicación."
 msgid "to resend the email."
 msgstr "para reenviar el email"
 
+msgid "About me"
+msgstr "Sobre mi"
