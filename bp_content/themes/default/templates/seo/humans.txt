@@ -12,7 +12,8 @@
 
 # THANKS
 
-    <name>
+Google App Engine Boilerplate - http://appengine.beecoss.com
+
 
 # TECHNOLOGY COLOPHON
 
