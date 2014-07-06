@@ -473,3 +473,6 @@ msgstr "para reenviar el email"
 
 msgid "About me"
 msgstr "Sobre mi"
+
+msgid "If you want to know more about me please use the form or connect with me on"
+msgstr "Si quieres saber sobre me usa el formulario o conecta conmigo en"

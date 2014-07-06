@@ -445,3 +445,6 @@ msgstr ""
 msgid "About me"
 msgstr ""
 
+
+msgid "If you want to know more about me please use the form or connect with me on"
+msgstr ""
