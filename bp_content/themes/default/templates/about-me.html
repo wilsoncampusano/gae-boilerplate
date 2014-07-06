@@ -1,6 +1,11 @@
 {% extends base_layout %}
 
-{% block header_title_lead %}About - {{app_name}}{% endblock %}
+{% block title %}
+        {% trans %}About me{% endtrans %} - {{app_name}}
+{% endblock %}
+{% block header_title %}
+        {% trans %}About me - Wilson Campusano{% endtrans %}
+{% endblock %}
 
 {% block content %}
 
@@ -19,7 +24,7 @@
     </div>
     <div class="row">
         <div class="span12">
-            <h1>Sobre <strong>Wilson Campusano</strong></h1>
+            <h1>    </h1>
         </div>
         
     </div>
@@ -35,7 +40,7 @@
     </div>
 
     <div class="row">
-        <div class="span9">
+        <div class="span9 hero-unit">
             <div class="span4">
             <ul>
                 <li>Java SE</li>
@@ -55,7 +60,7 @@
     
     <div class="row">
         <div class="span9">
-
+            <p class="lead">Cuando no estoy codeando me encanta pasar mi tiempo con mis amigos, me gusta mucho escuchar y tocar musica, ademas de ver peliculas y series.</p>
         </div>
     </div>
         

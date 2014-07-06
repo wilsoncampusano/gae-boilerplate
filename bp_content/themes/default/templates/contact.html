@@ -8,6 +8,24 @@
 {% endblock %}
 
 {% block content %}
+<div class="row">
+<div class="span9">
+ <p class="lead">
+
+                        {% trans %}If you want to know more about me please use the form or connect with me on{% endtrans %}
+                        <br><a href="https://www.linkedin.com/pub/wilson-campusano-jorge/51/b72/3a0" target="_blank">
+                        {% trans %}Linkedin Profile{% endtrans %}
+
+                        <br><a href="https://plus.google.com/u/0/+wilsoncampusano/" target="_blank">
+                        {% trans %}G+ Account{% endtrans %}
+
+                        <br><a href="https://github.com/wilsoncampusano" target="_blank">
+                        {% trans %}Github{% endtrans %}
+
+                    </p>
+                    </div>  
+
+</div>
     <form id="form_contact" action="{{ url|safe }}" method="post" class="well form-horizontal">
         <fieldset>
             <input type="hidden" name="exception" value="{{ exception|e }}">
