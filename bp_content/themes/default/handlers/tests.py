@@ -67,9 +67,9 @@ class AppTest(unittest.TestCase, test_helpers.HandlerHelpers):
 
         # fix configuration if this is still a raw boilerplate code - required by test with mails
         if not utils.is_email_valid(self.app.config.get('contact_sender')):
-            self.app.config['contact_sender'] = "noreply-testapp@example.com"
+            self.app.config['contact_sender'] = "wilsoncampusanojorge@gmail.com"
         if not utils.is_email_valid(self.app.config.get('contact_recipient')):
-            self.app.config['contact_recipient'] = "support-testapp@example.com"
+            self.app.config['contact_recipient'] = "wilsoncampusanojorge@gmail.com"
 
     def tearDown(self):
         self.testbed.deactivate()
@@ -81,7 +81,7 @@ class AppTest(unittest.TestCase, test_helpers.HandlerHelpers):
         form = self.get_form('/contact/', 'form_contact',
                             expect_fields=['exception', 'name', 'email', 'message'])
         form['name'] = 'Anton'
-        form['email'] = 'anton@example.com'
+        form['email'] = 'wilsoncampusanojorge@gmail.com'
         form['message'] = 'Hi there...'
         self.submit(form)
         message = self.get_sent_messages(to=self.app.config.get('contact_recipient'))[0]
@@ -91,7 +91,7 @@ class AppTest(unittest.TestCase, test_helpers.HandlerHelpers):
         self.register_activate_login_testuser()
         form = self.get_form('/contact/', 'form_contact')
         self.assertEqual(form['name'].value, '')
-        self.assertEqual(form['email'].value, 'testuser@example.com')
+        self.assertEqual(form['email'].value, 'wilsoncampusanojorge@gmail.com')
         self.assertEqual(form['message'].value, '')
         form['message'] = 'help'
         self.submit(form, expect_error=True, error_field='name')
