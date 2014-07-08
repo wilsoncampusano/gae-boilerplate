@@ -76,7 +76,7 @@ def test(os="mac"):
 
     """
     path = {
-        "mac": "/usr/local/google_appengine",
+        "mac": "~/programs/google_appengine",
        }[os]
 
     local("theme=default python testrunner.py {0} ./".format(path))
