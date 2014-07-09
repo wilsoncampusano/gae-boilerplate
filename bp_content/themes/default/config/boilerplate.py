@@ -5,14 +5,15 @@ config = {
     'environment': "boilerplate",
 
     # contact page email settings
-    'contact_sender': "appengine@beecoss.com",
-    'contact_recipient': "appengine@beecoss.com",
+    'contact_sender': "wilsoncampusanojorge@gmail.com",
+    'contact_recipient': "wilsoncampusanojorge@gmail.com",
 
     'send_mail_developer': False,
 
     # fellas' list
     'developers': (
         ('GAE Developer', 'gae-developer2014@beecoss.com'),
+        ('Wilcage Developer', 'wilsoncampusanojorge@gmail.com')
     ),
 
     # It is just an example to fill out this value
