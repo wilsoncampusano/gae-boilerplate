@@ -157,3 +157,21 @@ class SocialUser(ndb.Model):
     @staticmethod
     def open_id_providers():
         return [k for k,v in SocialUser.PROVIDERS_INFO.items() if v['uri']]
+
+class Efemeride(ndb.Model):
+    ''' modelo para fechas importantes del calendario'''
+    created = ndb.DateTimeProperty(auto_now_add=True)
+    updated = ndb.DateTimeProperty(auto_now=True)
+    countries = ndb.StringProperty(repeated = True)
+    efemeride_date = ndb.DateProperty()
+    description = ndb.TextProperty(repeated=True)
+    photos = ndb.BlobProperty()
+    more_details = ndb.StringProperty(repeated=True)
+
+    @staticmethod
+    def find_efemeride_by_date(start_date, end_date, country=None):
+        pass
+
+    @staticmethod
+    def find_efemeride_by_month_and_country(month, country=None):
+        pass
