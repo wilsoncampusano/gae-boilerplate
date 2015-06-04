@@ -1,1 +1,27 @@
 .home_bp{background:transparent url(../img/img_tech.jpg) top center no-repeat;padding-top:20em;text-align:center}.home_bp h1{font-size:1.6em}.home_bp p{font-size:1.2em}
+
+.linkedin-a{
+	text-indent: 82px;
+	text-align: left;
+	margin-top: 3px;
+	background: url('https://static.licdn.com/scds/common/u/images/logos/linkedin/logo_in_nav_44x36.png') left center no-repeat;
+	display: block;
+	height: 36px;
+	width: 44px;
+	position: relative;
+	left: -1px;
+	float: left;
+}
+
+.octocat-a{
+	text-indent: 82px;
+	text-align: left;
+	margin-top: 3px;
+	background: url('../img/octocat.png') left center no-repeat;
+	display: block;
+	height: 36px;
+	width: 44px;
+	position: relative;
+	left: -1px;
+	float: left;
+}
